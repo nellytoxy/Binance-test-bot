@@ -1,1 +1,1 @@
-web: python dashboard.py
+web: python3.11 dashboard.py
