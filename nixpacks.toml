@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ["python311", "gcc"]
+nixPkgs = ["python310", "python310Packages.pip"]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
 
-[start]
-cmd = "python dashboard.py"
+[phases.start]
+cmd = "python main.py"
