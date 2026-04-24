@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+bot.log
+trades.json
+config.json
+*.egg-info/
+dist/
+.DS_Store
