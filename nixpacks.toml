@@ -1,12 +1,11 @@
 [phases.setup]
-nixPkgs = ["python310", "gcc"]
+nixPkgs = ["python311Full", "gcc"]
 
 [phases.install]
 cmds = [
-  "python -m ensurepip --upgrade",
-  "python -m pip install --upgrade pip",
-  "python -m pip install -r requirements.txt"
+  "python3.11 -m pip install --upgrade pip",
+  "python3.11 -m pip install -r requirements.txt"
 ]
 
-[phases.start]
-cmd = "python dashboard.py"
+[start]
+cmd = "python3.11 dashboard.py"
